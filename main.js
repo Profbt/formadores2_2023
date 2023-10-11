@@ -9,7 +9,8 @@ function tocaSomAplasusos () {
 }
 
 document.querySelector(".tecla_grilo").onclick = tocaSomGrilo;
-document.querySelector(".tecla_aplausos").onclick = tocaSomAplasusos;
+document.querySelector(".tecla_aplausos").onclick = tocaSomAplasusos ;
+
 
 
 
