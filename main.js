@@ -1,15 +1,18 @@
-function tocaSomGrilo () {
-    document.querySelector("#som_tecla_grilo").play();
+function tocaSomRisada () {
+    document.querySelector("#som_tecla_risada").play();
     
 }
 
-function tocaSomAplasusos () {
+const listaDeTeclas = document.querySelectorAll(".tecla");
+listaDeTeclas[2].onclick = tocaSomRisada;
+
+function tocaSomAplausos () {
     document.querySelector("#som_tecla_aplausos").play();
     
 }
 
-document.querySelector(".tecla_grilo").onclick = tocaSomGrilo;
-document.querySelector(".tecla_aplausos").onclick = tocaSomAplasusos ;
+const listaDeTeclas = document.querySelectorAll(".tecla");
+listaDeTeclas[0].onclick = tocaSomAplausos;
 
 
 
