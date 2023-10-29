@@ -6,65 +6,28 @@
   --luz: #ff5c77
 }
 
-.nuvens{
+.menu {
+  display: flex;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #3586ff;
-  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
 }
-.nuvens .air{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-  background-size: 1000px 100px
+
+nav li {
+  display: inline;
+  justify-content: center;
 }
-.nuvens .air.air1{
-  animation: wave 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
-}
-.nuvens .air.air2{
-  animation: wave2 15s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 10px;
-}
-.nuvens .air.air3{
-  animation: wave 30s linear infinite;
-  z-index: 998;
-  opacity: 0.2;
-  animation-delay: -2s;
-  bottom: 15px;
-}
-.nuvens .air.air4{
-  animation: wave2 5s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 20px;
-}
-@keyframes wave{
-  0%{
-    background-position-x: 0px; 
-  }
-  100%{
-    background-position-x: 1000px; 
-  }
-}
-@keyframes wave2{
-  0%{
-    background-position-x: 0px; 
-  }
-  100%{
-    background-position-x: -1000px; 
-  }
+
+li {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 50px;
+  font-size: 35px;
+  color: white;
+  border: 4px solid;
+  border-radius: 30px;
+  padding: 10px;
+  
 }
 
 body {
@@ -84,7 +47,7 @@ h1 {
 
 h2 {
   color: var(--branca);
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 2.5rem;
 }
 
@@ -97,16 +60,18 @@ h2 {
   
 }
 .teclado {
-  width: 1280px;
+  width: 80%;
   height: 150px;
-  margin: auto;
   background: linear-gradient(to bottom, #eeeeee95 0%,#cccccc65 100%);
   box-shadow: 5px 5px 0 5px #66666684, 7px 7px 7px #0000009e;
   border-radius: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .tecla {
@@ -142,3 +107,6 @@ h2 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+
+
+
